@@ -32,7 +32,7 @@ const UpdateTodoBtn = document.getElementById('UpdateTodoBtn')
 
 
 //API Call to GET todos data
-let todosJson = localStorage.getItem("todosArr");
+let todosJson = localStorage.getItem("todosArr") || [];
 cl(todosJson)
 let todosArr = JSON.parse(todosJson)    // JSON to convert JS array
 cl(todosArr)
